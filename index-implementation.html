@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aonomy - Your Partner for Seamless, Personalized Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles-new.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">AONOMY</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Customs Clearance</a></li>
+                                <li><a href="#">Shipping & Logistics</a></li>
+                                <li><a href="#">Custom Duty Verification</a></li>
+                                <li><a href="#">International Shipping</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Track</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+2348061115769" class="phone-link">+234 806 111 5769</a>
+                    <a href="#" class="btn btn-primary">Get a Quote</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-split">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <h1>Your partner for seamless, personalized logistics</h1>
+                    <p>At Aonomy, we understand that every package matters. We provide fast, secure, and reliable logistics solutions that you can trust.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-content">
+                    <h2>We are dedicated to fulfilling your needs, every time</h2>
+                    <div class="hero-tracking">
+                        <h3>Track Your Shipment</h3>
+                        <form class="tracking-form">
+                            <input type="text" placeholder="Enter your tracking number" required>
+                            <button type="submit" class="btn btn-primary">Track</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <div class="action-tabs">
+                <div class="tab active" data-tab="freight">
+                    <i class="fas fa-shipping-fast"></i> Freight Services
+                </div>
+                <div class="tab" data-tab="customs">
+                    <i class="fas fa-clipboard-check"></i> Customs Clearance
+                </div>
+                <div class="tab" data-tab="warehousing">
+                    <i class="fas fa-warehouse"></i> Warehousing
+                </div>
+                <div class="tab" data-tab="project">
+                    <i class="fas fa-project-diagram"></i> Project Logistics
+                </div>
+            </div>
+            <div class="quote-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="origin">Origin</label>
+                        <input type="text" id="origin" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="transportMode">Transportation Mode</label>
+                        <select id="transportMode">
+                            <option value="">Please select</option>
+                            <option value="air">Air Freight</option>
+                            <option value="ocean">Ocean Freight</option>
+                            <option value="road">Road Freight</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Get a Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>An agile leader in emerging market logistics</h2>
+                    <p>As a rapidly expanding freight forwarding and logistics company that is focused on emerging markets, Aonomy aims to serve customers both large and small with our comprehensive range of products and services.</p>
+                    <p>Our industry expertise allows us to deliver tailored solutions, adding value to your supply chain. We prioritise your success and offer reliable service. With a focus on digital solutions and global reach, we are your trusted partner for emerging market logistics.</p>
+                    <a href="#" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="about-news">
+                    <div class="news-card">
+                        <h3>Red Sea shipping situation update</h3>
+                        <p>The Red Sea disruptions are still affecting global supply chains. Stay updated about the latest developments and how we're helping our clients navigate these challenges.</p>
+                        <a href="#" class="btn-text">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>We offer a wide range of logistics services</h2>
+            </div>
+            <div class="services-tabs">
+                <div class="services-menu">
+                    <div class="service-tab active" data-service="ocean">
+                        <span>Ocean Freight</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="air">
+                        <span>Air Freight</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="road">
+                        <span>Road Freight</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="customs">
+                        <span>Customs Clearance</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="warehousing">
+                        <span>Warehousing & Contract Logistics</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <div class="service-image" id="service-image">
+                        <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+                            <rect width="800" height="400" fill="#003366" />
+                            <path d="M0 300 Q 200 250 400 300 T 800 250" stroke="#FFFFFF" stroke-width="5" fill="none" opacity="0.3" />
+                            <path d="M0 320 Q 200 280 400 320 T 800 280" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.2" />
+                            <path d="M0 340 Q 200 310 400 340 T 800 310" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.1" />
+                            <rect x="500" y="150" width="200" height="100" fill="#FFB81C" />
+                            <rect x="550" y="100" width="100" height="50" fill="#FFB81C" />
+                            <rect x="525" y="80" width="20" height="70" fill="#00A19A" />
+                            <rect x="605" y="80" width="20" height="70" fill="#00A19A" />
+                            <rect x="655" y="80" width="20" height="70" fill="#00A19A" />
+                        </svg>
+                    </div>
+                    <div class="service-description" id="service-description">
+                        <h3>Ocean Freight</h3>
+                        <p>Our ocean freight services offer reliable and cost-effective solutions for shipping your cargo across the world's major shipping lanes. We provide FCL (Full Container Load) and LCL (Less than Container Load) options to meet your specific needs.</p>
+                        <ul>
+                            <li>Global coverage with competitive rates</li>
+                            <li>FCL and LCL shipping options</li>
+                            <li>Regular sailings on major trade lanes</li>
+                            <li>End-to-end visibility and tracking</li>
+                        </ul>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Duty Verification Section -->
+    <section class="verification">
+        <div class="container">
+            <div class="section-header">
+                <h2>Custom Duty Verification</h2>
+                <p>Verifying your custom duty papers can be a major hassle without the right knowledge and experience. Stop the guess game today!</p>
+            </div>
+            <div class="verification-content">
+                <div class="verification-text">
+                    <p>Check the genuineness of your custom papers in the shortest possible time. Don't fall victim of buying cars with forged or fake documents to avoid seizure of your vehicle/merchandise with our hassle free platform.</p>
+                    <p>We just want to unite you with your original verified paper, please fill out the form to get started.</p>
+                </div>
+                <div class="verification-form">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmEmail">Confirm Email <span class="required">*</span></label>
+                                <input type="email" id="confirmEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registrationNumber">Registration Number (C-Number) <span class="required">*</span></label>
+                            <input type="text" id="registrationNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="portOfAssessment">Port of Assessment <span class="required">*</span></label>
+                            <input type="text" id="portOfAssessment" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit to start your verification process</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust">
+        <div class="container">
+            <div class="section-header">
+                <h2>We are fully certified to handle all your logistics needs!</h2>
+            </div>
+            <div class="trust-content">
+                <div class="certification">
+                    <img src="src/images/logo.png" alt="Nigeria Customs Service" class="customs-logo">
+                </div>
+                <div class="trust-text">
+                    <p>Aonomy is officially recognized and certified by the Nigeria Customs Service, ensuring that all our operations comply with national and international regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What others say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>"Aonomy is our main carrier for our shipments from China and the Far East. The team is always reachable, supportive, and committed to ensuring that the service commitment promised is delivered."</p>
+                        <div class="testimonial-author">
+                            <span>Logistics at Culligan Middle East</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonials can be added here -->
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission-content">
+                <h2>We are on a mission to provide reliable and tailored seamless connections worldwide.</h2>
+                <a href="#" class="btn btn-secondary">Our fundamental principles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our extensive network of trusted ocean & air freight partners</h2>
+                <p>Through our partnerships with trusted service providers we enable you to ship your goods across the world.</p>
+            </div>
+            <div class="partners-logos">
+                <!-- Partner logos would go here -->
+                <div class="partner-logo">
+                    <img src="src/images/partner1.jpg" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="src/images/partner2.jpg" alt="Partner 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chatbot-button" id="chatbot-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-container" id="chatbot-container">
+            <div class="chatbot-header">
+                <h3>Aonomy Assistant</h3>
+                <button class="chatbot-close" id="chatbot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot">
+                    <p>Hello! I'm the Aonomy virtual assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input-field" placeholder="Type your message...">
+                <button id="chatbot-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Where Efficiency Meets Logistics – Find Us Here</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:aonomyltd@gmail.com">aonomyltd@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+2348061115769">+2348061115769</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lagos Office</h3>
+                        <p>18 commercial road, Apapa, Lagos.</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Abuja Office</h3>
+                        <p>Suite 109, MKK Plaza 22 I.T. Agbani Str. Off Obafemi Awolowo Way Jabi Abuja.</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7302424749164!2d3.3641019!3d6.4354752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2a74c66d69%3A0xb2ef3b22262af228!2sApapa%2C%20Lagos!5e0!3m2!1sen!2sng!4v1616729345678!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">AONOMY</span>
+                    <p>Fast, Secure, and Reliable Shipping and Logistics Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Track</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Customs Clearance</a></li>
+                            <li><a href="#">Shipping & Logistics</a></li>
+                            <li><a href="#">Custom Duty Verification</a></li>
+                            <li><a href="#">International Shipping</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="mailto:aonomyltd@gmail.com">aonomyltd@gmail.com</a></li>
+                            <li><a href="tel:+2348061115769">+2348061115769</a></li>
+                            <li>18 commercial road, Apapa, Lagos.</li>
+                            <li>Suite 109, MKK Plaza 22 I.T. Agbani Str. Off Obafemi Awolowo Way Jabi Abuja.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aonomy. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main-new.js"></script>
+</body>
+</html>

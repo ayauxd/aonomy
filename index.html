@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aonomy - Fast, Secure, and Reliable Shipping and Logistics Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" fill="#003366" rx="10" />
+                            <text x="70" y="40" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#003366">AONOMY</text>
+                            <path d="M15 30 L30 15 L45 30 L40 40 L20 40 Z" fill="#FFB81C" />
+                            <path d="M25 25 L35 25 L35 45 L25 45 Z" fill="#00A19A" />
+                        </svg>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Customs Clearance</a></li>
+                                <li><a href="#">Shipping & Logistics</a></li>
+                                <li><a href="#">Custom Duty Verification</a></li>
+                                <li><a href="#">International Shipping</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Track</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="btn btn-outline">Get a Quote</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <!-- Inline SVG Background -->
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; left: 0; z-index: -1;">
+            <defs>
+                <pattern id="shipPattern" patternUnits="userSpaceOnUse" width="100" height="100">
+                    <rect width="40" height="40" x="0" y="0" fill="#FFB81C" />
+                    <rect width="40" height="40" x="40" y="40" fill="#FFB81C" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="#003366" />
+            <rect width="100%" height="100%" fill="url(#shipPattern)" opacity="0.1" />
+            <path d="M0 300 Q 200 200 400 250 T 800 200" stroke="#FFFFFF" stroke-width="5" fill="none" opacity="0.2" />
+            <path d="M0 350 Q 200 280 400 320 T 800 280" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.1" />
+        </svg>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Fast, Secure, and Reliable Shipping and Logistics Solutions</h1>
+                    <p>At Aonomy, we understand that every package matters. We provide fast, secure, and reliable logistics solutions that you can trust.</p>
+                </div>
+                <div class="hero-tracking">
+                    <h2>Track Your Shipment</h2>
+                    <form class="tracking-form">
+                        <input type="text" placeholder="Enter your tracking number" required>
+                        <button type="submit" class="btn btn-primary">Track</button>
+                    </form>
+                </div>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-secondary">View Current Customs Exchange Rate</a>
+                    <a href="#" class="btn btn-secondary">Get a Quote for Your Shipment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive logistics solutions tailored to meet your shipping needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Customs Clearance</h3>
+                    <p>Aonomy ensures smooth navigation through customs, handling all documentation, which includes: Full management of import/export documentation and regulatory compliance.</p>
+                    <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Shipping & Logistics</h3>
+                    <p>Efficient shipping solutions for businesses and individuals. We handle everything from small packages to large freight with care and precision.</p>
+                    <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Custom Duty Verification</h3>
+                    <p>Verify the genuineness of your custom papers in the shortest possible time. Don't fall victim to forged or fake documents.</p>
+                    <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>International Shipping</h3>
+                    <p>Connect your business to the world with our reliable international shipping services. We handle all the complexities of global logistics.</p>
+                    <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Duty Verification Section -->
+    <section class="verification">
+        <div class="container">
+            <div class="section-header">
+                <h2>Custom Duty Verification</h2>
+                <p>Verifying your custom duty papers can be a major hassle without the right knowledge and experience. Stop the guess game today!</p>
+            </div>
+            <div class="verification-content">
+                <div class="verification-text">
+                    <p>Check the genuineness of your custom papers in the shortest possible time. Don't fall victim of buying cars with forged or fake documents to avoid seizure of your vehicle/merchandise with our hassle free platform.</p>
+                    <p>We just want to unite you with your original verified paper, please fill out the form to get started.</p>
+                </div>
+                <div class="verification-form">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmEmail">Confirm Email <span class="required">*</span></label>
+                                <input type="email" id="confirmEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="manifestNumber">Manifest Number <span class="required">*</span></label>
+                            <input type="text" id="manifestNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registrationNumber">Registration Number (C-Number) <span class="required">*</span></label>
+                            <input type="text" id="registrationNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="portOfAssessment">Port of Assessment <span class="required">*</span></label>
+                            <input type="text" id="portOfAssessment" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit to start your verification process</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust">
+        <div class="container">
+            <div class="section-header">
+                <h2>We are fully certified to handle all your logistics needs!</h2>
+            </div>
+            <div class="trust-content">
+                <div class="certification">
+                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="80" fill="#FFFFFF" stroke="#000000" stroke-width="2" />
+                        <path d="M100 30 L120 70 L170 70 L130 100 L150 150 L100 120 L50 150 L70 100 L30 70 L80 70 Z" fill="#008751" />
+                        <path d="M80 60 L120 60 L100 90 Z" fill="#FF0000" />
+                        <text x="100" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">NIGERIA CUSTOMS SERVICE</text>
+                    </svg>
+                </div>
+                <div class="trust-text">
+                    <p>Aonomy is officially recognized and certified by the Nigeria Customs Service, ensuring that all our operations comply with national and international regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Section -->
+    <section class="operations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Work in Action</h2>
+                <p>See photos of our operations, dedicated team facilities that make efficient logistics possible at Aonomy</p>
+            </div>
+            <div class="operations-gallery">
+                <div class="gallery-item">
+                    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E5E5E5" />
+                        <rect x="50" y="50" width="80" height="60" fill="#FFB81C" />
+                        <rect x="150" y="50" width="80" height="60" fill="#003366" />
+                        <rect x="250" y="50" width="80" height="60" fill="#00A19A" />
+                        <rect x="50" y="130" width="80" height="60" fill="#003366" />
+                        <rect x="150" y="130" width="80" height="60" fill="#00A19A" />
+                        <rect x="250" y="130" width="80" height="60" fill="#FFB81C" />
+                        <rect x="50" y="210" width="80" height="60" fill="#00A19A" />
+                        <rect x="150" y="210" width="80" height="60" fill="#FFB81C" />
+                        <rect x="250" y="210" width="80" height="60" fill="#003366" />
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E5E5E5" />
+                        <rect x="20" y="20" width="360" height="260" rx="10" fill="#FFFFFF" stroke="#003366" stroke-width="2" />
+                        <rect x="40" y="40" width="320" height="40" fill="#003366" />
+                        <rect x="40" y="100" width="320" height="2" fill="#E5E5E5" />
+                        <rect x="40" y="140" width="320" height="2" fill="#E5E5E5" />
+                        <rect x="40" y="180" width="320" height="2" fill="#E5E5E5" />
+                        <rect x="40" y="220" width="320" height="2" fill="#E5E5E5" />
+                        <circle cx="60" cy="120" r="10" fill="#FFB81C" />
+                        <circle cx="60" cy="160" r="10" fill="#FFB81C" />
+                        <circle cx="60" cy="200" r="10" fill="#FFB81C" />
+                        <circle cx="60" cy="240" r="10" fill="#FFB81C" />
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E5E5E5" />
+                        <rect x="100" y="50" width="200" height="200" fill="#FFFFFF" stroke="#003366" stroke-width="2" />
+                        <path d="M100 50 L200 20 L300 50" fill="none" stroke="#003366" stroke-width="2" />
+                        <path d="M300 50 L300 250" fill="none" stroke="#003366" stroke-width="2" />
+                        <path d="M200 20 L200 50" fill="none" stroke="#003366" stroke-width="2" />
+                        <rect x="120" y="80" width="60" height="40" fill="#FFB81C" />
+                        <rect x="220" y="80" width="60" height="40" fill="#FFB81C" />
+                        <rect x="120" y="140" width="60" height="40" fill="#FFB81C" />
+                        <rect x="220" y="140" width="60" height="40" fill="#FFB81C" />
+                        <rect x="150" y="200" width="100" height="50" fill="#003366" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Where Efficiency Meets Logistics – Find Us Here</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:aonomyltd@gmail.com">aonomyltd@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+2348061115769">+2348061115769</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lagos Office</h3>
+                        <p>18 commercial road, Apapa, Lagos.</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Abuja Office</h3>
+                        <p>Suite 109, MKK Plaza 22 I.T. Agbani Str. Off Obafemi Awolowo Way Jabi Abuja.</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7302424749164!2d3.3641019!3d6.4354752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2a74c66d69%3A0xb2ef3b22262af228!2sApapa%2C%20Lagos!5e0!3m2!1sen!2sng!4v1616729345678!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="60" fill="#FFFFFF" rx="10" />
+                        <text x="70" y="40" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#FFFFFF">AONOMY</text>
+                        <path d="M15 30 L30 15 L45 30 L40 40 L20 40 Z" fill="#FFB81C" />
+                        <path d="M25 25 L35 25 L35 45 L25 45 Z" fill="#00A19A" />
+                    </svg>
+                    <p>Fast, Secure, and Reliable Shipping and Logistics Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Track</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Customs Clearance</a></li>
+                            <li><a href="#">Shipping & Logistics</a></li>
+                            <li><a href="#">Custom Duty Verification</a></li>
+                            <li><a href="#">International Shipping</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="mailto:aonomyltd@gmail.com">aonomyltd@gmail.com</a></li>
+                            <li><a href="tel:+2348061115769">+2348061115769</a></li>
+                            <li>18 commercial road, Apapa, Lagos.</li>
+                            <li>Suite 109, MKK Plaza 22 I.T. Agbani Str. Off Obafemi Awolowo Way Jabi Abuja.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aonomy. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
