@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aonomy - Your Partner for Seamless, Personalized Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles-new.css">
+    <style>
+        /* Enhanced logo styling */
+        .logo-text {
+            font-family: var(--heading-font);
+            font-weight: 900;
+            font-size: 2rem;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+        
+        /* Service images */
+        .service-image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .service-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .service-image-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Service content layout */
+        @media (min-width: 992px) {
+            .service-content {
+                display: flex;
+                gap: var(--spacing-lg);
+            }
+            
+            .service-image-container {
+                flex: 1;
+                margin-bottom: 0;
+            }
+            
+            .service-description {
+                flex: 1;
+                padding: var(--spacing-md);
+            }
+        }
+        
+        /* Hero background */
+        .hero-left {
+            background-image: url('https://images.unsplash.com/photo-1577791465485-b80039b4d69a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 51, 102, 0.8);
+        }
+        
+        /* Chatbot CTA */
+        .chatbot-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: var(--spacing-lg);
+            padding: 10px 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .chatbot-cta:hover {
+            color: var(--white);
+            background-color: var(--accent-color);
+        }
+        
+        .chatbot-cta i {
+            font-size: 1.2rem;
+        }
+        
+        /* Tracking section */
+        .tracking {
+            padding: var(--spacing-xl) 0;
+            background-color: var(--light-gray);
+        }
+        
+        .tracking-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .tracking-form-large {
+            padding: var(--spacing-lg);
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tracking-form-large .form-row {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+        
+        .tracking-input-group {
+            flex: 3;
+        }
+        
+        .tracking-button-group {
+            flex: 1;
+        }
+        
+        .tracking-form-large input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .tracking-form-large .btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .tracking-form-large .form-row {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with enhanced logo -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">AONOMY</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#tracking">Track</a></li>
+                        <li><a href="#verification">Verification</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+2348061115769" class="phone-link">+234 806 111 5769</a>
+                    <a href="#quote" class="btn btn-primary">Get a Quote</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-split">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <h1>Your partner for seamless, personalized logistics</h1>
+                    <p>At Aonomy, we understand that every package matters. We provide fast, secure, and reliable logistics solutions that you can trust.</p>
+                    <a href="#services" class="btn btn-secondary">Explore Our Services</a>
+                    <div class="chatbot-cta" id="hero-chatbot-cta">
+                        <i class="fas fa-comments"></i> Chat with Chevy our logistics consultant
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-content">
+                    <h2>Reliable logistics solutions you can trust</h2>
+                    <p>Our global network and industry expertise ensure your cargo reaches its destination safely and on time, every time.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with real images -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>We offer a wide range of logistics services</h2>
+            </div>
+            <div class="services-tabs">
+                <div class="services-menu">
+                    <div class="service-tab active" data-service="ocean">
+                        <span>Ocean Freight</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="air">
+                        <span>Air Freight</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="road">
+                        <span>Road Freight</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="customs">
+                        <span>Customs Clearance</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="service-tab" data-service="warehousing">
+                        <span>Warehousing & Contract Logistics</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <div class="service-image-container" id="service-image-container">
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ocean Freight" id="service-image">
+                    </div>
+                    <div class="service-description" id="service-description">
+                        <h3>Ocean Freight</h3>
+                        <p>Our ocean freight services offer reliable and cost-effective solutions for shipping your cargo across the world's major shipping lanes. We provide FCL (Full Container Load) and LCL (Less than Container Load) options to meet your specific needs.</p>
+                        <ul>
+                            <li>Global coverage with competitive rates</li>
+                            <li>FCL and LCL shipping options</li>
+                            <li>Regular sailings on major trade lanes</li>
+                            <li>End-to-end visibility and tracking</li>
+                        </ul>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="tracking" id="tracking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Track your shipment in real-time</h2>
+                <p>Enter your tracking number below to get real-time updates on your shipment status.</p>
+            </div>
+            <div class="tracking-container">
+                <form class="tracking-form-large">
+                    <div class="form-row">
+                        <div class="form-group tracking-input-group">
+                            <input type="text" placeholder="Enter your tracking number" required>
+                        </div>
+                        <div class="form-group tracking-button-group">
+                            <button type="submit" class="btn btn-primary">Track Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot renamed to Chevy -->
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chatbot-button" id="chatbot-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-container" id="chatbot-container">
+            <div class="chatbot-header">
+                <h3>Chevy</h3>
+                <button class="chatbot-close" id="chatbot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot">
+                    <p>Hello! I'm Chevy, your logistics assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input-field" placeholder="Type your message...">
+                <button id="chatbot-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with enhanced logo -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">AONOMY</span>
+                    <p>Fast, Secure, and Reliable Shipping and Logistics Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#tracking">Track</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Customs Clearance</a></li>
+                            <li><a href="#">Shipping & Logistics</a></li>
+                            <li><a href="#">Custom Duty Verification</a></li>
+                            <li><a href="#">International Shipping</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="mailto:aonomyltd@gmail.com">aonomyltd@gmail.com</a></li>
+                            <li><a href="tel:+2348061115769">+2348061115769</a></li>
+                            <li>18 commercial road, Apapa, Lagos.</li>
+                            <li>Suite 109, MKK Plaza 22 I.T. Agbani Str. Off Obafemi Awolowo Way Jabi Abuja.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aonomy. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/enhanced.js"></script>
+</body>
+</html>
